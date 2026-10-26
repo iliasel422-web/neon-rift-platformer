@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Clash Arena</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-shell">
+      <div class="hud top-bar">
+        <div class="fighter-panel player">
+          <span class="name">YOU</span>
+          <div class="health-bar"><div id="playerHealthFill" class="fill"></div></div>
+        </div>
+        <div class="center-panel">
+          <div id="roundLabel">ROUND 1</div>
+          <div id="timer">60.0</div>
+        </div>
+        <div class="fighter-panel enemy">
+          <span class="name">RIVAL</span>
+          <div class="health-bar"><div id="enemyHealthFill" class="fill"></div></div>
+        </div>
+      </div>
+
+      <canvas id="gameCanvas" width="960" height="540"></canvas>
+
+      <div class="controls">
+        <span>Move: A / D</span>
+        <span>Jump: W</span>
+        <span>Punch: J</span>
+        <span>Kick: K</span>
+        <span>Block: S</span>
+        <span>Reset: R</span>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
